@@ -1,4 +1,4 @@
-const { app, BrowserWindow, autoUpdater} = require('electron')
+const { app, BrowserWindow} = require('electron')
 
 
 
@@ -24,6 +24,3 @@ app.on('activate', () => {
         createWindow()
     }
 })
-
-autoUpdater.setFeedURL('https://localhost:3000')
-autoUpdater.checkForUpdates()
