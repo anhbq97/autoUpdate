@@ -1,22 +1,28 @@
 {
   "name": "salonhair",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "App desktop for salon hair",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . MyApp",
+    "build": "electron-builder build --mac --publish never",
+    "deploy": "electron-builder build --mac --publish always",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "QuocAnh",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^12.0.4",
+    "electron": "^12.0.5",
+    "electron-builder": "^22.10.5",
     "electron-packager": "^15.2.0"
   },
   "dependencies": {
     "electron-is-dev": "^2.0.0",
     "electron-log": "^4.3.4",
     "electron-updater": "^4.3.8"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/anhbq97/autoUpdate.git"
   }
 }
