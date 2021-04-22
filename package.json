@@ -1,11 +1,11 @@
 {
   "name": "salonhair",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "App desktop for salon hair",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder build --mac --publish never",
+    "build": "electron-builder build --mac --win --publish never",
     "deploy": "electron-builder build --mac --publish always",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
